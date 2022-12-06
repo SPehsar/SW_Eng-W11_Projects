@@ -4,7 +4,7 @@
 import "./App.css"; // css
 import { useState } from "react";
 import { createContext } from "react";
-import ReactSwitch from "react-switch";
+import ReactSwitch from "react-switch";  // to make a fancy On/Off button (Any button can do this too with some codes)
 import Header from "./components/Header";
 import Reviews from "./components/Reviews";
 import Dashboard from "./components/Dashboard"
@@ -12,17 +12,18 @@ import AverageRating from "./components/AverageRating"
 import WebsiteVisitors from "./components/WebsiteVisitors"
 import SentimentAnalysis from "./components/SentimentAnalysis"
  
-export const ThemeContext = createContext(null);
+export const StyleContext = createContext(null);
 
 export default function App() {
-  const [theme, SetTheme] = useState("dark")
 
-  const toggleTheme = () => {
-    SetTheme((curr) => (curr === "light" ? "dark" : "light"));
+  const [theme, SetTheme] = useState("lightMode")
+
+  const toggleStyle = () => {
+    SetTheme((curr) => (curr === "darkMode" ? "lightMode" : "darkMode"));
   };
   
   return (
-    <ThemeContext.Provider value={{theme, toggleTheme}}>
+    <StyleContext.Provider value={{theme, toggleStyle}}>
 
     <>
       <main className="container" id={theme}>   
@@ -33,13 +34,13 @@ export default function App() {
       <SentimentAnalysis />
       <WebsiteVisitors />
       <div className="switch">  
-      <label> {theme === "light" ? "Light Mode" : "Dark Mode"} </label>
-      <ReactSwitch onChange = {toggleTheme}  checked={theme === "dark"} />
+      <label> {theme === "darkMode" ? "Dark Mode" : "Light Mode"} </label>
+      <ReactSwitch onChange = {toggleStyle}  checked={theme === "lightMode"} />
       </div>
       </main>
     </>
     
-    </ThemeContext.Provider>
+    </StyleContext.Provider>
   );
 }
 

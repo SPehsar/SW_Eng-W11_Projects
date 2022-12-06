@@ -13,11 +13,11 @@ body {
   height: 100%;
   font-family: 'Ubuntu', sans-serif;
 }
-#light {
+#lightMode {
   background-color: #f3ebf6;
   color: black
 }
-#dark {
+#darkMode {
   background-color: black;
   color: white
 }
@@ -28,12 +28,6 @@ p {
 
 .switch label {
   margin: 10px;
-}
-#light .switch label {
-  color: black;
-}
-#dark .switch label {
-  color: white;
 }
 
 .dashboard {
@@ -62,7 +56,6 @@ p {
   grid-area: Reviews;
   padding: 5px;
   margin: 5px ; 
-  height: 100%;
 }
 
 .reviews {

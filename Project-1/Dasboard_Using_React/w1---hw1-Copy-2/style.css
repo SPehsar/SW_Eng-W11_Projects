@@ -61,8 +61,7 @@ p {
   min-height: 30vh;
   grid-area: Reviews;
   padding: 5px;
-  margin: 5px ; 
-  height: 100%;
+  margin: 5px 
 }
 
 .reviews {
@@ -80,8 +79,8 @@ p {
   min-width: 200px solid;
   min-height: 30vh;
   grid-area: AvgRating;
+  margin: 5px;
   padding: 5px;
-  margin: 5px
 }
 
 .avgRating {
@@ -119,8 +118,8 @@ p {
   grid-template-columns: 15vw;
   grid-template-rows: 15vw;
   grid-area: WebVisit;
-  padding: 5px;
   margin: 5px;
+  padding: 5px;
   justify-items: stretch;
   justify-content: center;
 }
