@@ -1,0 +1,173 @@
+* {
+  margin: 0; padding: 0; border: 0; box-sizing: border-box;
+}
+
+:root {
+  --dark-cerulean: #c58adf;
+  --react: #98ae34;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+#light {
+  background-color: #f3ebf6;
+  color: black
+}
+#dark {
+  background-color: black;
+  color: white
+}
+
+p {
+  text-align: center;
+}
+
+.switch label {
+  margin: 10px;
+}
+#light .switch label {
+  color: black;
+}
+#dark .switch label {
+  color: white;
+}
+
+.dashboard {
+  flex-basis: 90%;
+  display: grid;
+  min-width: 200px solid;
+  min-height: 30vh;
+  grid-area: Menu;
+  padding: 5px;
+  margin: 5px
+}
+
+.dashboard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--react);
+}
+
+.reviews {
+  flex-basis: 90%;
+  display: grid;
+  min-width: 200px solid;
+  min-height: 30vh;
+  grid-area: Reviews;
+  padding: 5px;
+  margin: 5px ; 
+  height: 100%;
+}
+
+.reviews {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--react);
+  border-radius: 10px;
+}
+
+.avgRating {
+  flex-basis: 90%;
+  display: grid;
+  min-width: 200px solid;
+  min-height: 30vh;
+  grid-area: AvgRating;
+  padding: 5px;
+  margin: 5px
+}
+
+.avgRating {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--react);
+  border-radius: 10px;
+}
+
+.sentAnalysis {
+  flex-basis: 90%;
+  display: grid;
+  min-width: 200px solid;
+  min-height: 30vh;
+  grid-area: SentAnalysis;
+  padding: 5px;
+  margin: 5px
+}
+
+.sentAnalysis {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--react);
+  border-radius: 10px;
+}
+ 
+.webVisitors {
+  flex-basis: 60%;
+  display: grid;
+  display: flex;
+  grid-template-columns: 15vw;
+  grid-template-rows: 15vw;
+  grid-area: WebVisit;
+  padding: 5px;
+  margin: 5px;
+  justify-items: stretch;
+  justify-content: center;
+}
+
+.webVisitors {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--react);
+  border-radius: 10px;
+}
+
+.webVisitorsRectangle {
+  flex-basis: 90%;
+  display: grid;
+  min-width: 200px solid;
+  min-height: 30vh;
+  padding: 5px;
+  margin: 5px;
+  align-items: center;
+  justify-items: stretch;
+  justify-content: center;
+  background: var( --dark-cerulean)
+}
+
+.webVisitorsRectangle {
+  display: flex;
+}
+
+.container {
+  display: grid;
+  grid-template:
+    'Header Header Header Header'
+    'Menu Reviews AvgRating SentAnalysis'
+    'Menu WebVisit WebVisit WebVisit'
+    ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 50px;
+  grid-gap: 5px;  
+}
+
+.container {
+  display: grid;
+  height: 75vh;
+  padding-top: 5ex;
+  padding-left: 5ex;
+  padding-right: 5ex;
+  padding-bottom: 1000ex;
+}
+

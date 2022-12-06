@@ -1,3 +1,4 @@
+
 import Rectangle from './Rectangle'
 
   const WebsiteVisitors = () => {
@@ -6,11 +7,12 @@ import Rectangle from './Rectangle'
               <div>
             <h1>Website Visitors</h1>
             <h2>821</h2> 
-            
-            </div><br></br>
-            <div>
+            <div className="d-flex justify-content-center" >
             <Rectangle />
             </div>
+            
+            </div>
+
             </div>
             )
   }
