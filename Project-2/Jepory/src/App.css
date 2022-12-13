@@ -1,0 +1,120 @@
+*{
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#3E5F73;
+  margin-bottom: 1;
+  text-align: center;
+}
+
+.title {
+  color:white;
+  font-size:5em;
+  font-style:Brush Script MT;;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.score-play {
+  font-size: 4em;
+  color:rgb(230,207,122) ;
+}
+
+.point {
+  font-size: 4em;
+  color:white ;
+}
+
+.increase {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  height: 5vh;
+  width: 10vw;
+  font-size: 10px;
+  color: black;
+  background-color: rgb(97,145,181);
+  margin-right: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: medium;
+  border-width: 0px;
+  box-shadow: inset 0px -2px 1px rgba(0,0,0,0.8),
+  inset 0 2px 1px rgb(103, 108, 140);
+}
+
+.decrease {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  height: 5vh;
+  width: 10vw;
+  font-size: 10px;
+  color: black;
+  background-color: rgb(254,147,140);
+  margin-right: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: medium;
+  border-width: 0px;
+  box-shadow: inset 0px -2px 1px rgba(0,0,0,0.8),
+  inset 0 2px 1px rgb(103, 108, 140);
+}
+
+.reset {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  height: 5vh;
+  width: 10vw;
+  font-size: 10px;
+  color: black;
+  background-color: rgb(231,29,55);
+  margin-right: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: medium;
+  border-width: 0px;
+  box-shadow: inset 0px -2px 1px rgba(0,0,0,0.8),
+  inset 0 2px 1px rgb(103, 108, 140);
+}
+
+.selectCategory {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: black;
+  background-color: #e9d17a;
+  white-space: nowrap;
+  width: 50vw;
+  height: 10vh;
+  margin: 10px;
+  font-size: 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  border-width: 0px;
+  box-shadow: inset 0px -2px 1px rgba(0,0,0,0.8),
+  inset 0 2px 1px rgb(103, 108, 140);
+}
+
+.category {
+  color: rgb(234,210,122);
+}
+
+.answerDiv, .points{
+  color: white
+}
+
+.getQuestion {
+  white-space: nowrap;
+  height: 10vh;
+  width: 35vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(26,38,80);
+}
+
+
